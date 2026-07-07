@@ -78,7 +78,7 @@
         }
         
         .services-content.open {
-            max-height: 2000px; /* Hamma narsa sig'ishi uchun */
+            max-height: 2000px;
             padding: 15px;
             margin-bottom: 20px;
             border: 1px solid #eef2f3;
@@ -112,7 +112,7 @@
             color: #34495e;
         }
 
-        /* Aloqa tugmalari */
+        /* Aloqa va Manzil tugmalari */
         .btn {
             display: block;
             background: #3498db;
@@ -138,6 +138,15 @@
             background: #006699;
         }
         
+        /* Manzil tugmasi uchun yangi rang */
+        .btn-location {
+            background: #e67e22;
+            box-shadow: 0 4px 6px rgba(230, 126, 34, 0.2);
+        }
+        .btn-location:hover {
+            background: #d35400;
+        }
+        
         .call-text {
             font-size: 13px;
             color: #95a5a6;
@@ -159,8 +168,10 @@
     <h1>Usta Dilmurod</h1>
     <div class="subtitle">Professional taʼmirlash va diagnostika xizmatlari</div>
     
+    <!-- Xizmatlarni ochish tugmasi -->
     <div class="services-trigger" onclick="toggleServices()">Bizning xizmatlar 🛠️</div>
     
+    <!-- Ichki ro'yxat -->
     <div class="services-content" id="servicesMenu">
         
         <div class="service-item">
@@ -204,6 +215,9 @@
         </div>
         
     </div>
+
+    <!-- Yangi qo'shilgan manzil tugmasi -->
+    <a href="https://maps.app.goo.gl/ue68Foqxzyz5vtiR6" target="_blank" class="btn btn-location">Bizning manzil 📍</a>
 
     <p class="call-text">Bogʻlanish yoki buyurtma berish uchun quyidagi tugmalarni bosing:</p>
 
